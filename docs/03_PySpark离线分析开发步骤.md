@@ -79,16 +79,48 @@ enemy_spawn_detail/dt=yyyy-MM-dd/
 
 | 输出 | 粒度 | 说明 |
 | --- | --- | --- |
-| `dws_match_summary` | 每局一条 | 最终轮次、是否达成 50 波、队伍人数、团队职业集合 |
-| `dws_player_match_summary` | 每玩家每局一条 | 职业、存活轮次、伤害、击杀、治疗、承伤、卡牌集合 |
-| `dws_player_card_set` | 每玩家每局一条 | FP-Growth 使用的卡牌集合 |
-| `dws_map_grid_summary` | 每地图每网格一条 | 死亡次数、停留时长、刷新数量 |
+| `match_summary` | 每局一条 | 最终轮次、是否达成 50 波、队伍人数、团队职业集合 |
+| `player_match_summary` | 每玩家每局一条 | 职业、存活轮次、伤害、击杀、治疗、承伤、卡牌集合 |
+| `player_card_set` | 每玩家每局一条 | FP-Growth 使用的卡牌集合 |
+| `map_grid_summary` | 每地图每网格一条 | 死亡次数、停留时长、刷新数量 |
 
 队伍成功定义：
 
 ```text
 match_success = final_wave >= 50
 ```
+
+本地样例调试：
+
+```bash
+spark-submit spark_jobs/build_player_match_summary.py \
+  --input data/sample/dwd \
+  --output data/sample/dws \
+  --overwrite \
+  --show-counts
+```
+
+HDFS 正式运行：
+
+```bash
+spark-submit spark_jobs/build_player_match_summary.py \
+  --input hdfs:///game_balance/dwd \
+  --output hdfs:///game_balance/dws \
+  --overwrite \
+  --show-counts \
+  --output-partitions 2
+```
+
+输出目录：
+
+```text
+match_summary/dt=yyyy-MM-dd/
+player_match_summary/dt=yyyy-MM-dd/
+player_card_set/dt=yyyy-MM-dd/
+map_grid_summary/dt=yyyy-MM-dd/
+```
+
+`--output-partitions` 用于控制每个 DWS 数据集写出前的分区数。小样本建议使用 `2`，GB 级别数据可以根据机器资源提高到 `8`、`16` 或更多。
 
 ## 5. ADS 分析任务
 
