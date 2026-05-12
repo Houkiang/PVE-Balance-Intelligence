@@ -29,6 +29,7 @@ hdfs:///game_balance/ods/game_event_log/dt=yyyy-MM-dd/
 | 输出 | 内容 |
 | --- | --- |
 | `dwd_game_event_detail` | 标准事件公共字段 |
+| `dwd_player_event_detail` | 玩家加入、死亡、升级等玩家事件 |
 | `dwd_player_wave_stat_detail` | 玩家每轮表现 |
 | `dwd_card_pick_detail` | 卡牌候选和选择 |
 | `dwd_position_tick_detail` | 玩家位置采样 |
@@ -40,6 +41,37 @@ hdfs:///game_balance/ods/game_event_log/dt=yyyy-MM-dd/
 2. 过滤缺失 `match_id`、`event_type`、`event_time` 的异常数据。
 3. 将数值字段转换为正确类型。
 4. 将坐标限制在 `0-999`。
+
+本地样例调试：
+
+```bash
+spark-submit spark_jobs/clean_events.py \
+  --input data/sample/generated_events \
+  --output data/sample/dwd \
+  --overwrite \
+  --show-counts
+```
+
+HDFS 正式运行：
+
+```bash
+spark-submit spark_jobs/clean_events.py \
+  --input hdfs:///game_balance/ods/game_event_log \
+  --output hdfs:///game_balance/dwd \
+  --overwrite \
+  --show-counts
+```
+
+输出目录：
+
+```text
+game_event_detail/dt=yyyy-MM-dd/
+player_event_detail/dt=yyyy-MM-dd/
+player_wave_stat_detail/dt=yyyy-MM-dd/
+card_pick_detail/dt=yyyy-MM-dd/
+position_tick_detail/dt=yyyy-MM-dd/
+enemy_spawn_detail/dt=yyyy-MM-dd/
+```
 
 ## 4. DWS 汇总处理
 
@@ -180,4 +212,3 @@ performance_score =
 3. 职业、地图、卡牌、流派四类 ADS 表均可生成。
 4. ADS 可以导出为本地 CSV/Parquet。
 5. 小样本和大样本都能跑通。
-
