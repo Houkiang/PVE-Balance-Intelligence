@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local generated data
+data/local_raw/**
+!data/local_raw/.gitkeep
+data/ads_export/**
+!data/ads_export/.gitkeep
+data/sample/**
+!data/sample/.gitkeep
+
+# Spark and Hadoop local artifacts
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+_SUCCESS
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

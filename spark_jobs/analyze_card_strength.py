@@ -1,0 +1,12 @@
+"""Analyze card strength metrics and write ADS results."""
+
+from __future__ import annotations
+
+
+def main() -> None:
+    raise NotImplementedError("Card strength analysis implementation is planned next.")
+
+
+if __name__ == "__main__":
+    main()
+

@@ -1,0 +1,13 @@
+weapon_id,weapon_name,weapon_tags,base_damage,base_cooldown,base_attack_count,base_frequency,base_range,aoe_factor,damage_growth,cooldown_growth,attack_count_growth,frequency_growth,range_growth
+staff,Arcane Staff,staff;magic;aoe,120,2.4,2,1.0,180,1.40,0.12,-0.06,0.10,0.08,0.10
+blade,Orbit Blade,blade;melee;speed,85,1.6,4,1.2,95,1.10,0.08,-0.04,0.12,0.12,0.05
+totem,Healing Totem,totem;support;heal,35,3.2,1,0.7,130,0.60,0.04,-0.03,0.05,0.04,0.08
+hammer,Thunder Hammer,hammer;melee;control,155,3.0,1,0.75,110,1.25,0.14,-0.05,0.08,0.05,0.06
+bow,Storm Bow,bow;range;crit,95,1.8,3,1.15,230,0.95,0.09,-0.04,0.10,0.10,0.07
+dagger,Shadow Dagger,dagger;crit;speed,70,1.1,5,1.45,80,0.80,0.07,-0.03,0.14,0.14,0.04
+cannon,Flame Cannon,cannon;aoe;fire,180,3.4,1,0.70,210,1.70,0.15,-0.05,0.07,0.04,0.09
+orb,Frost Orb,orb;magic;control,105,2.2,2,0.95,170,1.30,0.10,-0.05,0.08,0.07,0.10
+drone,Auto Drone,drone;summon;support,65,1.5,3,1.30,160,0.90,0.07,-0.03,0.12,0.11,0.06
+lance,Solar Lance,lance;range;overpowered,150,1.7,4,1.35,260,1.55,0.16,-0.07,0.16,0.13,0.11
+grimoire,Void Grimoire,grimoire;magic;risk_damage;overpowered,190,2.1,3,1.20,220,1.80,0.18,-0.06,0.14,0.12,0.12
+shield,Aegis Shield,shield;defense;sustain,60,2.6,1,0.70,100,0.70,0.05,-0.03,0.05,0.04,0.04

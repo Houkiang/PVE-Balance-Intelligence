@@ -1,0 +1,13 @@
+hero_id,hero_name,role_type,base_power,base_defense,base_luck,base_move_speed,base_heal_power,survival_factor,damage_taken_role_weight,preferred_tags
+warrior,Warrior,tank,0.95,1.25,0.90,0.95,0.20,1.25,1.00,defense;melee;sustain
+guardian,Guardian,tank,0.82,1.55,0.85,0.80,0.35,1.55,1.20,defense;shield;sustain
+berserker,Berserker,dps,1.35,0.82,0.95,1.05,0.05,0.88,-0.10,melee;risk_damage;bleed
+mage,Mage,dps,1.30,0.75,1.05,0.90,0.10,0.80,-0.30,magic;staff;aoe
+archmage,Archmage,dps,1.58,0.82,1.18,0.95,0.18,0.98,-0.10,magic;staff;aoe;overpowered
+ranger,Ranger,dps,1.15,0.85,1.15,1.20,0.10,0.90,-0.20,crit;speed;range
+assassin,Assassin,dps,1.42,0.70,1.25,1.35,0.05,0.72,-0.35,crit;speed;risk_damage
+engineer,Engineer,support,1.00,1.00,1.00,0.95,0.35,1.00,0.20,summon;control;support
+summoner,Summoner,support,1.08,0.92,1.10,0.90,0.25,0.95,0.10,summon;aoe;support
+cleric,Cleric,healer,0.80,1.00,1.05,0.95,1.30,1.05,0.10,heal;support;sustain
+oracle,Oracle,healer,0.92,1.12,1.32,1.00,1.55,1.25,0.20,heal;luck;support;overpowered
+alchemist,Alchemist,support,1.05,0.95,1.22,1.05,0.65,1.02,0.05,buff;luck;sustain

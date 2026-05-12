@@ -1,0 +1,43 @@
+card_id,card_name,card_type,rarity,base_weight,min_wave,max_wave,target_attr,effect_value,duration_wave,target_weapon,upgrade_attr,negative_attr,negative_value,hero_affinity,build_tags,prerequisite
+buff_power_01,Power Training I,permanent_buff,common,110,1,,power,0.06,,,,,,warrior:1.1;berserker:1.2;default:1.0,damage,
+buff_power_02,Power Training II,permanent_buff,uncommon,75,8,,power,0.10,,,,,,warrior:1.1;berserker:1.2;mage:1.1;default:1.0,damage,
+buff_power_03,Titan Strength,permanent_buff,rare,30,18,,power,0.20,,,,,,berserker:1.3;archmage:1.2;default:0.9,damage;overpowered,
+buff_defense_01,Iron Skin I,permanent_buff,common,105,1,,defense,0.08,,,,,,guardian:1.3;warrior:1.2;default:1.0,defense,
+buff_defense_02,Iron Skin II,permanent_buff,uncommon,70,8,,defense,0.14,,,,,,guardian:1.3;warrior:1.2;default:1.0,defense;sustain,
+buff_luck_01,Lucky Charm I,permanent_buff,common,90,1,,luck,0.08,,,,,,ranger:1.2;oracle:1.3;alchemist:1.2;default:1.0,luck,
+buff_luck_02,Lucky Charm II,permanent_buff,uncommon,60,10,,luck,0.15,,,,,,oracle:1.4;alchemist:1.3;default:0.9,luck,
+buff_speed_01,Swift Boots I,permanent_buff,common,95,1,,move_speed,0.08,,,,,,ranger:1.2;assassin:1.3;default:1.0,speed,
+buff_speed_02,Swift Boots II,permanent_buff,uncommon,55,12,,move_speed,0.16,,,,,,ranger:1.2;assassin:1.3;default:0.9,speed,
+buff_heal_01,Blessed Pulse I,permanent_buff,common,75,1,,heal_power,0.10,,,,,,cleric:1.4;oracle:1.4;default:0.8,heal,
+buff_heal_02,Blessed Pulse II,permanent_buff,rare,35,15,,heal_power,0.22,,,,,,cleric:1.4;oracle:1.5;default:0.7,heal;sustain,
+instant_heal_01,Emergency Heal I,instant_effect,common,100,1,,hp,0.22,1,,,,,cleric:0.9;oracle:0.9;default:1.0,sustain,
+instant_heal_02,Emergency Heal II,instant_effect,uncommon,70,10,,hp,0.38,1,,,,,cleric:0.9;oracle:0.9;default:1.0,sustain,
+instant_shield_01,Flash Barrier,instant_effect,common,80,1,,shield,0.20,2,,,,,guardian:1.2;engineer:1.2;default:1.0,defense;sustain,
+instant_rage_01,Battle Surge,instant_effect,uncommon,65,8,,power,0.25,2,,,,,berserker:1.3;assassin:1.1;default:0.9,risk_damage,
+weapon_staff_01,Arcane Staff,new_weapon,rare,45,1,,,1.00,,staff,,,,mage:1.4;archmage:1.6;default:0.8,staff;magic;aoe,
+weapon_blade_01,Orbit Blade,new_weapon,rare,45,1,,,1.00,,blade,,,,ranger:1.2;warrior:1.1;default:0.9,blade;melee;speed,
+weapon_hammer_01,Thunder Hammer,new_weapon,rare,38,1,,,1.00,,hammer,,,,guardian:1.3;warrior:1.2;default:0.8,hammer;control,
+weapon_bow_01,Storm Bow,new_weapon,rare,42,1,,,1.00,,bow,,,,ranger:1.5;assassin:1.1;default:0.8,bow;range;crit,
+weapon_dagger_01,Shadow Dagger,new_weapon,rare,40,1,,,1.00,,dagger,,,,assassin:1.5;ranger:1.2;default:0.8,dagger;crit;speed,
+weapon_cannon_01,Flame Cannon,new_weapon,rare,35,5,,,1.00,,cannon,,,,engineer:1.3;summoner:1.1;default:0.8,cannon;aoe;fire,
+weapon_orb_01,Frost Orb,new_weapon,rare,42,3,,,1.00,,orb,,,,mage:1.2;archmage:1.3;default:0.9,orb;magic;control,
+weapon_drone_01,Auto Drone,new_weapon,rare,45,1,,,1.00,,drone,,,,engineer:1.5;summoner:1.4;default:0.8,drone;summon;support,
+weapon_lance_01,Solar Lance,new_weapon,epic,22,12,,,1.00,,lance,,,,archmage:1.2;ranger:1.2;oracle:1.1;default:0.7,lance;range,
+weapon_grimoire_01,Void Grimoire,new_weapon,epic,18,20,,,1.00,,grimoire,,,,archmage:1.5;mage:1.2;default:0.6,grimoire;magic;risk_damage,
+weapon_shield_01,Aegis Shield,new_weapon,rare,38,1,,,1.00,,shield,,,,guardian:1.5;warrior:1.2;default:0.8,shield;defense;sustain,
+upgrade_staff_damage_01,Staff Damage I,weapon_upgrade,common,85,2,,,0.10,,staff,damage,,,mage:1.3;archmage:1.4;default:1.0,staff;damage,has_weapon:staff
+upgrade_staff_damage_02,Staff Damage II,weapon_upgrade,uncommon,55,12,,,0.18,,staff,damage,,,mage:1.3;archmage:1.5;default:0.9,staff;damage,has_weapon:staff
+upgrade_staff_range_01,Staff Range,weapon_upgrade,uncommon,60,3,,,0.12,,staff,range,,,mage:1.2;archmage:1.4;default:1.0,staff;aoe,has_weapon:staff
+upgrade_blade_frequency_01,Blade Frequency I,weapon_upgrade,uncommon,65,3,,,0.10,,blade,frequency,,,ranger:1.2;assassin:1.1;default:1.0,blade;speed,has_weapon:blade
+upgrade_blade_count_01,Blade Count,weapon_upgrade,rare,38,14,,,0.16,,blade,attack_count,,,ranger:1.2;assassin:1.2;default:0.9,blade;speed,has_weapon:blade
+upgrade_bow_crit_01,Bow Precision,weapon_upgrade,uncommon,60,5,,,0.14,,bow,frequency,,,ranger:1.4;assassin:1.1;default:0.9,bow;crit,has_weapon:bow
+upgrade_dagger_speed_01,Dagger Flurry,weapon_upgrade,rare,45,10,,,0.18,,dagger,frequency,,,assassin:1.5;default:0.8,dagger;crit;speed,has_weapon:dagger
+upgrade_cannon_range_01,Cannon Blast Radius,weapon_upgrade,uncommon,55,8,,,0.16,,cannon,range,,,engineer:1.3;summoner:1.1;default:0.9,cannon;aoe,has_weapon:cannon
+upgrade_orb_control_01,Orb Freeze Field,weapon_upgrade,uncommon,55,8,,,0.14,,orb,range,,,mage:1.2;archmage:1.2;default:0.9,orb;control,has_weapon:orb
+upgrade_drone_count_01,Drone Swarm,weapon_upgrade,rare,42,12,,,0.18,,drone,attack_count,,,engineer:1.5;summoner:1.4;default:0.8,drone;summon,has_weapon:drone
+upgrade_lance_overload_01,Lance Overload,weapon_upgrade,epic,20,22,,,0.30,,lance,damage,,,archmage:1.3;ranger:1.2;default:0.6,lance;range,has_weapon:lance
+upgrade_grimoire_void_01,Void Cascade,weapon_upgrade,epic,16,28,,,0.36,,grimoire,damage,,,archmage:1.6;mage:1.2;default:0.5,grimoire;risk_damage;overpowered,has_weapon:grimoire
+affix_glass_power_01,Glass Power,global_affix,epic,25,35,,power,0.30,,,,defense,-0.20,mage:1.2;ranger:1.1;assassin:1.1;default:0.8,risk_damage,
+affix_blood_pact_01,Blood Pact,global_affix,epic,22,35,,power,0.26,,,,hp,-0.18,berserker:1.4;assassin:1.1;default:0.8,risk_damage;sustain,
+affix_golden_fate_01,Golden Fate,global_affix,legendary,12,40,,luck,0.45,,,,defense,-0.12,oracle:1.5;alchemist:1.4;default:0.7,luck,
+affix_void_bargain_01,Void Bargain,global_affix,legendary,10,42,,power,0.55,,,,survival_factor,-0.22,archmage:1.5;mage:1.2;default:0.5,risk_damage;overpowered,

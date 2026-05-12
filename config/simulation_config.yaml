@@ -1,0 +1,19 @@
+# Global simulation settings.
+seed: 20260512
+match_count: 1000
+player_pool_size: 300
+start_date: "2026-05-12"
+days: 1
+
+team_size_min: 2
+team_size_max: 10
+target_wave: 50
+max_wave: 80
+
+map_width: 1000
+map_height: 1000
+position_tick_seconds: 3
+global_affix_min_wave: 35
+
+output_path: "data/local_raw/game_event_log"
+
